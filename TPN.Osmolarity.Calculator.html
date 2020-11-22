@@ -272,287 +272,215 @@ function CheckCaPhos() {
 </HEAD>
 
 <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
-
-<TABLE BORDER="0" WIDTH="860">
-  <TR>
-      <TD ALIGN="LEFT" VALIGN="TOP">
-         <!-- ************************************************************************ -->
-         <!-- Left column 1st row = logo -->
-         <!-- ************************************************************************ -->
-         <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="200">
-           <TR>
-             <TD><IMG SRC="pix/rx_logo4.gif" ALT="Keep it simple stupid." WIDTH="184" HEIGHT="181" ALT="30 years" ALIGN="left"></TD>
-           </TR>
-         </TABLE>
-      <TD ALIGN="LEFT" VALIGN="TOP">
-         <!-- ************************************************************************ -->
-         <!-- Right column first row = Header -->
-         <!-- ************************************************************************ -->
-
-         <H3 CLASS="callout">TPN Osmolarity Calculator</H3>
-
-         <P>
-         To use the TPN osmolarity calculator:
-         </P>
-         <P CLASS="indent">
-         <OL>
-            <LI>Select the base solutions.  
-            <LI>Enter the volume of each base solution.
-            <LI>Click the <B>Calculate</B> button to determine the total base volume.
-            <LI>Enter the amount of each additive <B>per Bag</B>.  Please note the units of measure.
-            <LI>Click the <B>Calculate</B> button to determine the final osmolarity.
-            <LI>To start over again, click the <B>Clear</B> button.
-         </OL>
-
-
-      </TD>
-  </TR>
-
-  <TR>
-    <TD>
-        <!-- ************************************************************************ -->
-        <!-- Left column 2nd row blank -->
-        <!-- ************************************************************************ -->
-        &nbsp;
-    </TD>
-
-    <TD ALIGN="CENTER" WIDTH="660">
-       <!-- ************************************************************************ -->
-       <!-- Right column 2nd row body -->
-       <!-- ************************************************************************ -->
-       <TABLE ALIGN="left" BORDER="0" CELLPADDING="0" CELLSPACING="0">
-
-         <!-- ----------------------------------------- -->
-         <!-- --------- Osmolarity Calculator --------- -->
-         <!-- ----------------------------------------- -->
-
-         <P CLASS="indent">
-         <FORM NAME="osmform" ONSUBMIT="">
-         <TABLE CELLPADDING="30">
-         <TR><TD>
-           <TABLE BORDER="2"  BORDERCOLOR="blue"  CELLSPACING="1">
-              <TR><TD ALIGN="middle" WIDTH="400">
+<tbody><tr><td>
+           <table border="2" bordercolor="blue" cellspacing="1">
+              <tbody><tr><td align="middle" width="400">
              
-              <TABLE BORDER="0" CELLSPACING="2">
+              <table border="0" cellspacing="2">
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">
-                      &nbsp
-                 <TR>
-                   <TD CLASS="center" COLSPAN="3" HEIGHT="45" VALIGN="top">
-                      <FONT SIZE="4"><B>Base solution</B></FONT></TD>
+                 <tbody><tr>
+                   <td colspan="3" valign="top">
+                      &nbsp;
+                 </td></tr><tr>
+                   <td class="center" colspan="3" height="45" valign="top">
+                      <font size="4"><b>Base solution</b></font></td>
 
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                      Amino acid</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                      <SELECT NAME="aa" SIZE="1"> 
-                        <OPTION VALUE="3.5">3.5%</OPTION> 
-                        <OPTION VALUE="5.5">5.5%</OPTION> 
-                        <OPTION VALUE="7">7%</OPTION>
-                        <OPTION VALUE="8">8%</OPTION>
-                        <OPTION VALUE="8.5">8.5%</OPTION> 
-                        <OPTION VALUE="10">10%</OPTION> 
-                        <OPTION SELECTED VALUE="15">15%</OPTION> 
-                      </SELECT></TD>
-                   <TD HEIGHT="25" WIDTH="150">
-                      <INPUT NAME="aaml" SIZE="3" VALUE="0"> ml</TD>
-
-
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                      Dextrose</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                      <SELECT NAME="dex" SIZE="1"> 
-                        <OPTION VALUE="5">5%</OPTION> 
-                        <OPTION VALUE="10">10%</OPTION> 
-                        <OPTION VALUE="20">20%</OPTION>
-                        <OPTION VALUE="30">30%</OPTION> 
-                        <OPTION VALUE="40">40%</OPTION> 
-                        <OPTION VALUE="50">50%</OPTION> 
-                        <OPTION SELECTED VALUE="70">70%</OPTION> 
-                      </SELECT></TD> 
-                   <TD  HEIGHT="25"  WIDTH="150">
-                      <INPUT NAME="dexml" SIZE="3" VALUE="0"> ml</TD>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                      Amino acid</td>
+                   <td class="center" height="25" width="120">
+                      <select name="aa" size="1"> 
+                        <option value="3.5">3.5%</option> 
+                        <option value="5.5">5.5%</option> 
+                        <option value="7">7%</option>
+                        <option value="8">8%</option>
+                        <option value="8.5">8.5%</option> 
+                        <option value="10">10%</option> 
+                        <option selected="" value="15">15%</option> 
+                      </select></td>
+                   <td height="25" width="150">
+                      <input name="aaml" size="3" value="0"> ml</td>
 
 
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                      Lipid</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                      <SELECT NAME="fat" SIZE="1"> 
-                        <OPTION VALUE="10">10%</OPTION> 
-                        <OPTION VALUE="20">20%</OPTION> 
-                        <OPTION SELECTED VALUE="30">30%</OPTION>
-                      </SELECT> </TD>
-                   <TD HEIGHT="25" WIDTH="150">
-                      <INPUT NAME="fatml" SIZE="3" VALUE="0"> ml</TD>
-
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Sterile Water</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     &nbsp</TD>
-                   <TD HEIGHT="25" WIDTH="150">
-                     <INPUT NAME="swml" SIZE="3" VALUE="0"> ml </TD>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                      Dextrose</td>
+                   <td class="center" height="25" width="120">
+                      <select name="dex" size="1"> 
+                        <option value="5">5%</option> 
+                        <option value="10">10%</option> 
+                        <option value="20">20%</option>
+                        <option value="30">30%</option> 
+                        <option value="40">40%</option> 
+                        <option value="50">50%</option> 
+                        <option selected="" value="70">70%</option> 
+                      </select></td> 
+                   <td height="25" width="150">
+                      <input name="dexml" size="3" value="0"> ml</td>
 
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Total volume </TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="Submit" ONCLICK="calcbasevol();" TYPE="button" VALUE="Calculate=>"> </TD>
-                   <TD HEIGHT="25" WIDTH="150">
-                     <INPUT DISABLED NAME="finalml" SIZE="3" VALUE="0"> ml </TD>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                      Lipid</td>
+                   <td class="center" height="25" width="120">
+                      <select name="fat" size="1"> 
+                        <option value="10">10%</option> 
+                        <option value="20">20%</option> 
+                        <option selected="" value="30">30%</option>
+                      </select> </td>
+                   <td height="25" width="150">
+                      <input name="fatml" size="3" value="0"> ml</td>
+
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     Sterile Water</td>
+                   <td class="center" height="25" width="120">
+                     &nbsp;</td>
+                   <td height="25" width="150">
+                     <input name="swml" size="3" value="0"> ml </td>
 
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp</TD>
-                 <TR>
-                   <TD CLASS="center" COLSPAN="3" HEIGHT="45" VALIGN="top">
-                     <FONT FACE="Arial" SIZE="4"><B>Additives (per Bag)</B></FONT></TD>
-
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Ca Cl</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="CaCL" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     mEq</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Ca Gluconate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="CaGLUC" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     mEq</TD>
-
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     K Cl</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="KCL" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="120">
-                     mEq</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="150">
-                     K Acetate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="KACE" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="120">
-                     mEq</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     K Phosphate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="KPHOS" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     <B>mMol</B></TD>
-
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Mg Sulfate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="MgSULF" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     mEq</TD>
-
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Na Cl</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="NaCL" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     mEq</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Na Acetate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="NaACE" SIZE="5"> </TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     mEq</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Na Phosphate</TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="NaPHOS" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     <B>mMol</B></TD>
-
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     Adult MVI-12<sup>#</sup></TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="MVI" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     ml</TD>
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                     MTE-4<sup>#</sup></TD>
-                   <TD CLASS="center" HEIGHT="25" WIDTH="120">
-                     <INPUT NAME="MTE" SIZE="5"></TD>
-                   <TD  HEIGHT="25" WIDTH="150">
-                     ml</TD>
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                     Total volume </td>
+                   <td class="center" height="25" width="120">
+                     <input name="Submit" onclick="calcbasevol();" type="button" value="Calculate=>"> </td>
+                   <td height="25" width="150">
+                     <input name="finalml" size="3" value="0" disabled=""> ml </td>
 
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="right" HEIGHT="25" WIDTH="110">
-                      <B>Osmolarity</B></TD>
-                   <TD CLASS="center" HEIGHT="25" VALIGN="top" WIDTH="120">
-                      <INPUT NAME="Submit" ONCLICK="osmcalc();" TYPE="button" VALUE="Calculate=>"> 
-                   <TD CLASS="left" HEIGHT="25"  WIDTH="150">
-                      <INPUT NAME="osm" SIZE="4"> mOsmol / L</TD>
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;</td>
+                 </tr><tr>
+                   <td class="center" colspan="3" height="45" valign="top">
+                     <font face="Arial" size="4"><b>Additives (per Bag)</b></font></td>
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">&nbsp
-                 <TR>
-                   <TD CLASS="center" HEIGHT="25" VALIGN="top" WIDTH="110">
-                       &nbsp
-                   <TD CLASS="center" HEIGHT="25" VALIGN="top" WIDTH="120">
-                       <INPUT NAME="Clear" ONCLICK="ClearOsmform();" TYPE="button" VALUE=" Clear  form "> 
-                   <TD CLASS="center" HEIGHT="25" VALIGN="top" WIDTH="150">
-                       &nbsp
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     Ca Cl</td>
+                   <td class="center" height="25" width="120">
+                     <input name="CaCL" size="5"></td>
+                   <td height="25" width="150">
+                     mEq</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     Ca Gluconate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="CaGLUC" size="5"></td>
+                   <td height="25" width="150">
+                     mEq</td>
 
-                 <TR>
-                   <TD COLSPAN="3" style="border-bottom-style:solid; border-bottom-width:1px;">
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                     K Cl</td>
+                   <td class="center" height="25" width="120">
+                     <input name="KCL" size="5"></td>
+                   <td height="25" width="120">
+                     mEq</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="150">
+                     K Acetate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="KACE" size="5"></td>
+                   <td height="25" width="120">
+                     mEq</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     K Phosphate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="KPHOS" size="5"></td>
+                   <td height="25" width="150">
+                     <b>mMol</b></td>
+
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                     Mg Sulfate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="MgSULF" size="5"></td>
+                   <td height="25" width="150">
+                     mEq</td>
+
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                     Na Cl</td>
+                   <td class="center" height="25" width="120">
+                     <input name="NaCL" size="5"></td>
+                   <td height="25" width="150">
+                     mEq</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     Na Acetate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="NaACE" size="5"> </td>
+                   <td height="25" width="150">
+                     mEq</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     Na Phosphate</td>
+                   <td class="center" height="25" width="120">
+                     <input name="NaPHOS" size="5"></td>
+                   <td height="25" width="150">
+                     <b>mMol</b></td>
+
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                     Adult MVI-12<sup>#</sup></td>
+                   <td class="center" height="25" width="120">
+                     <input name="MVI" size="5"></td>
+                   <td height="25" width="150">
+                     ml</td>
+                 </tr><tr>
+                   <td class="right" height="25" width="110">
+                     MTE-4<sup>#</sup></td>
+                   <td class="center" height="25" width="120">
+                     <input name="MTE" size="5"></td>
+                   <td height="25" width="150">
+                     ml</td>
+
+
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="right" height="25" width="110">
+                      <b>Osmolarity</b></td>
+                   <td class="center" height="25" valign="top" width="120">
+                      <input name="Submit" onclick="osmcalc();" type="button" value="Calculate=>"> 
+                   </td><td class="left" height="25" width="150">
+                      <input name="osm" size="4"> mOsmol / L</td>
+
+                 </tr><tr>
+                   <td colspan="3" valign="top">&nbsp;
+                 </td></tr><tr>
+                   <td class="center" height="25" valign="top" width="110">
+                       &nbsp;
+                   </td><td class="center" height="25" valign="top" width="120">
+                       <input name="Clear" onclick="ClearOsmform();" type="button" value=" Clear  form "> 
+                   </td><td class="center" height="25" valign="top" width="150">
+                       &nbsp;
+
+                 </td></tr><tr>
+                   <td colspan="3" style="border-bottom-style:solid; border-bottom-width:1px;">
                      &nbsp;
 
-                 <TR>
-                   <TD COLSPAN="3" VALIGN="top">
+                 </td></tr><tr>
+                   <td colspan="3" valign="top">
          		<sup>#</sup>In a central TPN the contribution of MVI and MTE to the total mOsmol is 
          		minimal, therefore they are usually excluded in the calculation. With a peripheral PN 
          		solution, these components become more important.
 
-                 </TR>
-               </TABLE>
-            </TABLE>
-         </TABLE>
-         </FORM>
-         </p>
-       </TABLE>
-     </TD><!-- End Right column 2nd row body -->
-  </TR>
-</TABLE>
-
-<!-- Footer -->
-<HR>
-<P CLASS="center">
-  <A HREF="javascript:history.go(-1)">Click here to return to previous page</A>
-  </P>
-
-<?php include 'footer.php'; ?>
-
+                 </td></tr>
+               </tbody></table>
+            </td></tr></tbody></table>
+         </td></tr></tbody>
 </BODY>
 </HTML>
